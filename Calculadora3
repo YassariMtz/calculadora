@@ -1,0 +1,45 @@
+package calculadora;
+
+class calculadora {
+
+  public double x;
+  public double y;
+
+    public double suma() {
+        return x+y;
+    }
+
+    public double resta(){
+        return x-y;
+    }
+
+    public double multiplicacion(){
+        return x*y;
+    }
+
+    public double division(){
+        return x/y;
+    }
+    public double modulo(){
+        return x%y;
+    }
+}
+
+class Main {
+
+    public static void main(String[] args) {
+
+        calculadora calculadora1 = new calculadora();
+
+        calculadora1.x = 15;
+        calculadora1.y = 10;
+
+        System.out.println(calculadora1.suma());
+        System.out.println(calculadora1.resta());
+        System.out.println(calculadora1.multiplicacion());
+        System.out.println(calculadora1.division());
+        System.out.println(calculadora1.modulo());
+    }
+}
+
+
